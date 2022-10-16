@@ -23,7 +23,7 @@ public class ReportController {
     }
 
     @PostMapping
-    public ResponseEntity createReport(@RequestBody Report report){
+    public ResponseEntity<Report> createReport(@RequestBody Report report){
         return ResponseEntity.ok(reportService.createReport(report));
     }
 
